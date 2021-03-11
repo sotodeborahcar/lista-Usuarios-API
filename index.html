@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Planilla de usuarios</title>
+  </head>
+  <body>
+    <main>
+      <h2>LISTA DE USUARIOS:</h2>
+      <!-- 
+        ======================
+        * FORMULARIO-AGREGAR *
+        ======================
+       -->
+      <h2>AGREGAR USUARIO</h2>
+      <form action="" class="formulario">
+        <input
+          type="text"
+          placeholder="Nombre completo"
+          name="fullname"
+          id="fullname"
+        />
+        <input type="email" placeholder="Email" name="email" id="email" />
+        <input
+          type="text"
+          placeholder="Dirección"
+          name="address"
+          id="address"
+        />
+        <input type="number" placeholder="Telefono" name="phone" id="phone" />
+
+        <!-- <input type="submit" value="Agregar usuario" id="botonAgregar" /> -->
+        <button type="submit" id="agregar-usuario" form="formulario">
+          Agregar
+        </button>
+      </form>
+      <!-- 
+        ==============
+        * LISTA *
+        ==============
+        -->
+      <ul class="lista-usuarios"></ul>
+
+      <!-- 
+        ========================
+        * FORMULARIO-MODIFICAR *
+        ========================
+       -->
+      <form class="formulario-modificar hidden">
+        <h2>MODIFICAR USUARIO</h2>
+
+        <label for="name-modificar">
+          Nombre
+          <input class="name-modificar" type="text" placeholder="Nombre" />
+        </label>
+
+        <label for="email-modificar">
+          Email
+          <input class="email-modificar" type="email" placeholder="email" />
+        </label>
+
+        <label for="address-modificar">
+          Direccion
+          <input
+            class="address-modificar"
+            type="text"
+            placeholder="direccion"
+          />
+        </label>
+
+        <label for="phone-modificar">
+          Telefono
+          <input class="phone-modificar" placeholder="telefono" />
+        </label>
+        <button
+          type="submit"
+          id="modificar-usuario"
+          form="formulario-modificar"
+        >
+          Modificar
+        </button>
+      </form>
+    </main>
+    <!-- CLASE -->
+    <!-- <script src="index.js"></script>  -->
+    <!-- EJEMPLO -->
+    <!-- <script src="main.js"></script> -->
+    <!-- EJERCICIO HECHO EN CLASE -->
+    <!-- <script src="main2.js"></script> -->
+    <script src="index2.js"></script>
+  </body>
+</html>
